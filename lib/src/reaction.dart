@@ -39,5 +39,5 @@ class Reaction {
       title?.key == object.title?.key;
 
   @override
-  int get hashCode => hashValues(icon, previewIcon, title);
+  int get hashCode => Object.hash(icon, previewIcon, title);
 }
